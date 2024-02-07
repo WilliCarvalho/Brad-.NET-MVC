@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVCSalesWebProj.Models;
+using MVCSalesWebProj.Models.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -18,6 +18,7 @@ namespace MVCSalesWebProj.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["SubMessage"] = "Essa página foi feita com muito amor e carinho S2";
 
             return View();
         }
